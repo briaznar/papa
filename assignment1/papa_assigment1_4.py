@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[67]:
+# In[9]:
 
 import random
 import math
@@ -9,23 +9,23 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
 
-# In[81]:
+# In[10]:
 
-cosin = []
-sin = []
+cosin = list()
+sin = list()
 
 rand=random.sample(range(1,90),10)
 rand.sort()
 
 
-# In[82]:
+# In[11]:
 
 for val in rand:
     cosin.append(math.cos(val))
     sin.append(math.sin(val))
 
 
-# In[83]:
+# In[12]:
 
 plt.plot(rand, sin,'r-')
 plt.plot(rand,cosin,'b-')
