@@ -69,7 +69,7 @@ Given below is an Ethernet frame without the Preamble and the Frame Check Sequen
 \texttt{00 27 10 21 fa 48 00 13 \hspace{0.5cm} 10 e8 dd 52 08 06 00 01\\ 08 00 06 04 00 01 00 13 \hspace{0.5cm} 10 e8 dd 52 c0 a8 02 01\\ 00 00 00 00 00 00 c0 a8 \hspace{0.5cm} 02 67} \\ \\
 
 \underline{Find}:
-\begin{enumerate}
+\begin{enumerate}https://preview.overleaf.com/public/tbgxycndjzvz/images/74ab5a56c5c8131ff3a69e3c44c58c47a5910407.jpeg
 \item Source MAC Address \\
 \textbf{00 13 10 e8 dd 52}
 \item Destination MAC Address \\
@@ -77,7 +77,7 @@ Given below is an Ethernet frame without the Preamble and the Frame Check Sequen
 \item What protocol is inside the data payload? \\
 \textbf{Address Resolution Protocol (08 06)}
 \item Please mention what the last 2 fields hold in the above frame. \\
-\textbf{They Hold the type and the user data}
+\textbf{They refer to the Target protocol address which is the intern network address of the intended receiver}
 \end{enumerate}
 
 
@@ -86,16 +86,13 @@ Given below is an Ethernet frame without the Preamble and the Frame Check Sequen
 \section{Cable Issue (5 Points)}
 
 Let us consider we have two cables of 20 meters each. One of them is in a 100MBps network while the other is in a 10MBps network. If you had to transfer data through each of them, how much time it would take for the first bit to arrive in each setting? (For your calculation you can assume that the speed of light takes the same value as in the videos.) Please provide formulas and calculations along with your results. \\
-\\ \textbf{for a 100Mb/s cable}
-\[S  = 100M b/s\] \\
+\\ \textbf{for a 100Mb/s cable and for 10Mb/s}
 \[length = 20 m\] \\
 \[speed  = 300M m/s\] \\
 \[t  = \frac{20m}{300M m/s} = 6.66*10^-8 s\] \\
-\\ \textbf{for a 10Mb/s cable}
-\[S  = 10M b/s\] \\
-\[length = 20 m\] \\
-\[speed  = 30M m/s\] \\
-\[t  = \frac{20m}{30M m/s} = 6.66*10^-7 s\]
+
+The time will be the same for both settings, because since the first bit is already generated, the card's clock speed is not relevant.
+
 % ------------------------------------------------------------------------------
 
 
@@ -123,7 +120,7 @@ Consider a situation in which you need to check if \url{www.wikipedia.org} is re
 
 Do this once in the university and once in your home/dormitory network. With your answers, you must paste the screen shots to validate your find.
 
-At university 
+\textbf{At university}
 \begin{enumerate}
 \itemsep0em
 \item  0\% \ of package loss\
@@ -131,10 +128,10 @@ At university
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.9\textwidth]{ping.png}
-   \caption{ping results for questions 1 and 2}
+   \caption{ping results for questions 1, 2 and 3}
      \label{fig:ping}
 \end{figure}
-\item My IP address is 141.26.178.83 \\
+\item My IP address is 141.26.178.83 \\ Wikipedia server is 91.198.174.192 \
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.9\textwidth]{my_ip.png}
