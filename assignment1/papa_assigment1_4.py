@@ -1,34 +1,27 @@
 
-# coding: utf-8
-
-# In[9]:
-
 import random
 import math
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
 
-# In[10]:
+#Creating an array for sine and cosine
+COSIN = list()
+SIN = list()
 
-cosin = list()
-sin = list()
-
+#Creates 10 random numebrs between 1 and 90 and then order them
 rand=random.sample(range(1,90),10)
 rand.sort()
 
 
-# In[11]:
-
+#Stores the result from sin and cosin values in their correspondant arrays
 for val in rand:
-    cosin.append(math.cos(val))
-    sin.append(math.sin(val))
+    COSIN.append(math.cos(val))
+    SIN.append(math.sin(val))
 
-
-# In[12]:
-
-plt.plot(rand, sin,'r-')
-plt.plot(rand,cosin,'b-')
+#Plot the sin and cosine values against the random values generated
+plt.plot(rand, SIN,'r-')
+plt.plot(rand,COSIN,'b-')
 plt.ylabel('cosin')
 plt.xlabel('sin')
 sin_legend = mpatches.Patch(color='red', label='Sin')
@@ -37,12 +30,6 @@ plt.legend(handles=[sin_legend, cos_legend],loc=5)
 plt.show()
 
 
-# In[ ]:
-
-
-
-
-# In[ ]:
 
 
 
