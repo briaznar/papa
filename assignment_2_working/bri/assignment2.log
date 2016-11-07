@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (MiKTeX 2.9 64-bit)  (format=lualatex 2016.10.27)  5 NOV 2016 00:14
+This is LuaTeX, Version 0.95.0 (MiKTeX 2.9 64-bit)  (format=lualatex 2016.10.27)  7 NOV 2016 13:26
  restricted system commands enabled.
 **assignment2.tex
 (./assignment2.tex
@@ -298,7 +298,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.481 seconds)
+luaotfload | main : initialization completed in 0.431 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 ("C:/Program Files/MiKTeX 2.9/tex/latex/fontspec/fontspec-luatex.sty"
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -1670,50 +1670,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--153
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
 File: logo_west_small.png Graphic file (type png)
 <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 159.
+Package luatex.def Info: logo_west_small.png used on input line 168.
 (luatex.def)             Requested size: 51.21504pt x 10.63553pt.
  [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 166--168
+Underfull \hbox (badness 10000) in paragraph at lines 175--177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
 File: logo_west_small.png Graphic file (type png)
 <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 180.
+Package luatex.def Info: logo_west_small.png used on input line 189.
 (luatex.def)             Requested size: 51.21504pt x 10.63553pt.
  [6
 
 ]
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.00018pt on input line 180.
+(Font)              scaled to size 12.00018pt on input line 189.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 11.99982pt on input line 180.
+(Font)              scaled to size 11.99982pt on input line 189.
 
 No complaints by nag.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 182.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
 File: logo_west_small.png Graphic file (type png)
 <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 182.
+Package luatex.def Info: logo_west_small.png used on input line 191.
 (luatex.def)             Requested size: 51.21504pt x 10.63553pt.
  [7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 182.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
  (./assignment2.aux
 Language english already loaded; id is 4
 Package cleveref Info: loaded `english' language definitions on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 182.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 182.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
 Package rerunfilecheck Info: File `assignment2.out' has not changed.
 (rerunfilecheck)             Checksum: 458865703B3B9B7D2B3C14B2CFAD11EC;265.
 Package logreq Info: Writing requests to 'assignment2.run.xml'.
@@ -1724,23 +1754,25 @@ Package logreq Info: Writing requests to 'assignment2.run.xml'.
 Here is how much of LuaTeX's memory you used:
  39712 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 1688 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 137 glue, 1 kern, 76 attribute, 53 glue_spec, 76 at
+ 1798 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 151 glue, 1 kern, 79 attribute, 53 glue_spec, 79 at
 tribute_list, 1 write nodes
-   avail lists: 1:3,2:729,3:77,4:56,5:137,6:1200,7:738,8:84,9:217,10:10,11:96
+   avail lists: 1:3,2:723,3:77,4:56,5:137,6:1200,7:731,8:84,9:217,10:10,11:96
  42280 multiletter control sequences out of 65536+200000
- 60 fonts using 21368119 bytes
+ 60 fonts using 21368407 bytes
  78i,15n,106p,8822b,747s stack positions out of 5000i,500n,10000p,200000b,50000s
-<c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman10-italic.otf><c:/p
-rogram files/miktex 2.9/fonts/opentype/public/lm/lmroman8-regular.otf><c:/progra
-m files/miktex 2.9/fonts/opentype/public/lm/lmroman10-bold.otf><c:/program files
-/miktex 2.9/fonts/opentype/public/lm/lmroman10-regular.otf><c:/program files/mik
-tex 2.9/fonts/opentype/public/lm/lmmono10-regular.otf><c:/program files/miktex 2
-.9/fonts/opentype/public/lm/lmroman12-regular.otf><c:/program files/miktex 2.9/f
-onts/opentype/public/lm/lmsans10-bold.otf>
-Output written on assignment2.pdf (7 pages, 166361 bytes).
+<C:/Program Files/MiKTeX 2.9//fonts/opentype/public/lm-math/latinmodern-math.otf
+><C:/Program Files/MiKTeX 2.9//fonts/opentype/public/lm-math/latinmodern-math.ot
+f><c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman10-italic.otf><c:
+/program files/miktex 2.9/fonts/opentype/public/lm/lmroman8-regular.otf><c:/prog
+ram files/miktex 2.9/fonts/opentype/public/lm/lmroman10-bold.otf><c:/program fil
+es/miktex 2.9/fonts/opentype/public/lm/lmroman10-regular.otf><c:/program files/m
+iktex 2.9/fonts/opentype/public/lm/lmmono10-regular.otf><c:/program files/miktex
+ 2.9/fonts/opentype/public/lm/lmroman12-regular.otf><c:/program files/miktex 2.9
+/fonts/opentype/public/lm/lmsans10-bold.otf>
+Output written on assignment2.pdf (7 pages, 173795 bytes).
 
-PDF statistics: 136 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 150 PDF objects out of 1000 (max. 8388607)
  34 named destinations out of 1000 (max. 131072)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
