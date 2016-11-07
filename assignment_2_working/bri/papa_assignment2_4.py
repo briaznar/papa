@@ -10,24 +10,19 @@ class EchoRequestHandler(socketserver.BaseRequestHandler):
 
 if __name__ == '__main__':
     import socket
-    import threading
 
-    address = ('localhost', 8080)
-    server = socketserver.TCPServer(address, EchoRequestHandler)
-    ip, port = server.server_address # find out what port we were given
+    ip = 'localhost'
+    port = 8080
 
-    t = threading.Thread(target=server.serve_forever)
-    t.setDaemon(True) # don't hang on exit
-    t.start()
 
     # Connect to the server
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.connect((ip, port))
+    s = socket.socket()
+    s.connect((ip,port))
 
     #ask for the data
     userinfo = input("Please provide your name, age, and matriklenumer separated by colons (,)")
     #encode input 
-    userinfo = userinfo.encode('utf-8')
+    userinfo = userinfo.encode('utf-8') 
     # Send the data
     print('Sending : "%s"' % userinfo)
     len_sent = s.send(userinfo)

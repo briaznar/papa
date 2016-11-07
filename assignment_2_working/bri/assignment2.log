@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (MiKTeX 2.9 64-bit)  (format=lualatex 2016.10.27)  7 NOV 2016 13:26
+This is LuaTeX, Version 0.95.0 (MiKTeX 2.9 64-bit)  (format=lualatex 2016.10.27)  7 NOV 2016 22:10
  restricted system commands enabled.
 **assignment2.tex
 (./assignment2.tex
@@ -298,7 +298,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.431 seconds)
+luaotfload | main : initialization completed in 0.409 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 ("C:/Program Files/MiKTeX 2.9/tex/latex/fontspec/fontspec-luatex.sty"
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -1285,7 +1285,14 @@ Package biblatex Warning: Conflicting options.
 (biblatex)                Setting 'uniquelist=true' on input line 42.
 
 (./assignment2.aux
-Language english already loaded; id is 4)
+Language english already loaded; id is 4
+
+LaTeX Warning: Label `fig:network diagram' multiply defined.
+
+
+LaTeX Warning: Label `fig:network diagram@cref' multiply defined.
+
+)
 \openout1 = assignment2.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -1304,8 +1311,7 @@ LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 42.
 LaTeX Font Info:    ... okay on input line 42.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 42.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 42.
-
-("C:/Program Files/MiKTeX 2.9/tex/latex/tipa/t3cmr.fd"
+ ("C:/Program Files/MiKTeX 2.9/tex/latex/tipa/t3cmr.fd"
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 42.
@@ -1641,126 +1647,225 @@ Package luatex.def Info: logo_west_small.png used on input line 83.
 lmroman8-regular.luc) [2
 
 <./logo_west_small.png>]
+File: logo_west_small.png Graphic file (type png)
+ <use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 146.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+
+[3
+
+]
+File: logo_west_small.png Graphic file (type png)
+ <use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 146.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [4]
+<network_diagram.png, id=61, 485.4135pt x 345.08925pt>
+File: network_diagram.png Graphic file (type png)
+
+<use network_diagram.png>
+Package luatex.def Info: network_diagram.png used on input line 151.
+(luatex.def)             Requested size: 376.42744pt x 267.60991pt.
+File: logo_west_small.png Graphic file (type png)
+ <use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 167.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [5
+
+<./network_diagram.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 168--171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+(load luc: C:/Users/Bri/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/
+lmroman8-bold.luc)(load luc: C:/Users/Bri/AppData/Local/MiKTeX/2.9/luatex-cache/
+generic/fonts/otl/lmroman6-regular.luc)(load luc: C:/Users/Bri/AppData/Local/MiK
+TeX/2.9/luatex-cache/generic/fonts/otl/lmroman6-bold.luc)
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+
+ []
+
+File: logo_west_small.png Graphic file (type png)
+<use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 182.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [6
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
+
+ []
+
+File: logo_west_small.png Graphic file (type png)
+<use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 192.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [7]
+Underfull \hbox (badness 10000) in paragraph at lines 199--201
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
+ []
+
+
+Overfull \hbox (231.75085pt too wide) in paragraph at lines 231--232
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+File: logo_west_small.png Graphic file (type png)
+<use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 232.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [8
+
+]
+<results_client.png, id=116, 622.12425pt x 57.816pt>
+File: results_client.png Graphic file (type png)
+ <use results_client.png>
+Package luatex.def Info: results_client.png used on input line 272.
+(luatex.def)             Requested size: 376.42744pt x 34.98363pt.
+
+<results_server.png, id=117, 617.9085pt x 66.84975pt>
+File: results_server.png Graphic file (type png)
+ <use results_server.png>
+Package luatex.def Info: results_server.png used on input line 278.
+(luatex.def)             Requested size: 376.42744pt x 40.7242pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: logo_west_small.png Graphic file (type png)
 <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 149.
+Package luatex.def Info: logo_west_small.png used on input line 285.
 (luatex.def)             Requested size: 51.21504pt x 10.63553pt.
- [3
-
-]
+ [9<./results_client.png>]
 File: logo_west_small.png Graphic file (type png)
  <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 149.
+Package luatex.def Info: logo_west_small.png used on input line 285.
 (luatex.def)             Requested size: 51.21504pt x 10.63553pt.
- [4]
-Underfull \hbox (badness 10000) in paragraph at lines 150--153
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--153
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--153
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--153
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--153
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 155--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
-
- []
-
-File: logo_west_small.png Graphic file (type png)
-<use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 168.
-(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
- [5
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 175--177
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
-
- []
-
-File: logo_west_small.png Graphic file (type png)
-<use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 189.
-(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
- [6
-
-]
+[10<./results_server.png>]
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.00018pt on input line 189.
+(Font)              scaled to size 12.00018pt on input line 285.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 11.99982pt on input line 189.
+(Font)              scaled to size 11.99982pt on input line 285.
 
 No complaints by nag.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 287.
 File: logo_west_small.png Graphic file (type png)
 <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 191.
+Package luatex.def Info: logo_west_small.png used on input line 287.
 (luatex.def)             Requested size: 51.21504pt x 10.63553pt.
- [7
+ [11
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 287.
  (./assignment2.aux
 Language english already loaded; id is 4
 Package cleveref Info: loaded `english' language definitions on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 287.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 287.
 Package rerunfilecheck Info: File `assignment2.out' has not changed.
 (rerunfilecheck)             Checksum: 458865703B3B9B7D2B3C14B2CFAD11EC;265.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'assignment2.run.xml'.
 
 \openout1 = assignment2.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 39712 strings out of 495118
+ 39848 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 1798 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 151 glue, 1 kern, 79 attribute, 53 glue_spec, 79 at
+ 2235 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 202 glue, 1 kern, 99 attribute, 53 glue_spec, 99 at
 tribute_list, 1 write nodes
-   avail lists: 1:3,2:723,3:77,4:56,5:137,6:1200,7:731,8:84,9:217,10:10,11:96
- 42280 multiletter control sequences out of 65536+200000
- 60 fonts using 21368407 bytes
- 78i,15n,106p,8822b,747s stack positions out of 5000i,500n,10000p,200000b,50000s
+   avail lists: 1:3,2:1743,3:158,4:56,5:402,6:1377,7:1379,8:247,9:1075,10:10,11:
+96
+ 42316 multiletter control sequences out of 65536+200000
+ 64 fonts using 21889111 bytes
+ 78i,16n,106p,8822b,933s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9//fonts/opentype/public/lm-math/latinmodern-math.otf
 ><C:/Program Files/MiKTeX 2.9//fonts/opentype/public/lm-math/latinmodern-math.ot
 f><c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman10-italic.otf><c:
@@ -1770,9 +1875,9 @@ es/miktex 2.9/fonts/opentype/public/lm/lmroman10-regular.otf><c:/program files/m
 iktex 2.9/fonts/opentype/public/lm/lmmono10-regular.otf><c:/program files/miktex
  2.9/fonts/opentype/public/lm/lmroman12-regular.otf><c:/program files/miktex 2.9
 /fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on assignment2.pdf (7 pages, 173795 bytes).
+Output written on assignment2.pdf (11 pages, 270392 bytes).
 
-PDF statistics: 150 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 131072)
+PDF statistics: 240 PDF objects out of 1000 (max. 8388607)
+ 102 named destinations out of 1000 (max. 131072)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
