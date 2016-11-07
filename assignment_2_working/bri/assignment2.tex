@@ -185,6 +185,30 @@ Since the sliding window protocol is made for avoiding overflowing from one fast
 Since you now understand the concept of Window Size for Sliding Window Protocol and how to calculate it, consider a window size of 3 packets and you have 7 packets to send. Draw the process of \texttt{Selective Repeat Sliding Window Protocol} where in the 3rd packet from the sender is lost while transmission. Show diagrammatically how the system reacts when a packet is not received and how it recuperates from that scenario. [\texttt{5 points}] \\
 
 
+\begin{figure}[h]
+  	\centering
+  	\includegraphics[width=0.9\textwidth]{swp1.png}
+   	\caption{Initiates protocol by sending SYN segment and receives acknowledgment back}
+     \label{fig:step1}
+\end{figure}
+
+
+\begin{figure}[h]
+  	\centering
+  	\includegraphics[width=0.9\textwidth]{swp2.png}
+   	\caption{Now the sender sends all the packages in the windows simultaneously and the receiver send the acknowledgement back.
+   	But 3rd package never gets to the receiver, so the sender waits until its timeout expires for acknowledgement}
+     \label{fig:server}
+\end{figure}
+
+
+\begin{figure}[h]
+  	\centering
+  	\includegraphics[width=0.9\textwidth]{swp3.png}
+   	\caption{If the timeout is reached then he tries to send the package again, this time it gets its acknowledgment and continues by sliding the window}
+     \label{fig:server}
+\end{figure}
+
 
 
 % ------------------------------------------------------------------------------
@@ -273,7 +297,7 @@ if __name__ == '__main__':
    	\caption{Client results}
      \label{fig:client}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[!ht]
   	\centering
   	\includegraphics[width=0.9\textwidth]{results_server.png}
    	\caption{Server results}
