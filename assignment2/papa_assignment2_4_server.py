@@ -16,8 +16,9 @@ def Main():
         return
 
     data = json.loads(data)
-    message = 'Name: {}\nAge: {}\nMatrikelnummer: {}'.format(data['name'], data['age'], data['matrikel'])
-    print(message)
+    print('Name:  {}'.format(data['name'] ))
+    print('Age: {}'.format(data['age'] ))
+    print('Matrikelnummer: {}'.format(data['matrikel'] ))
 
     conn.close()
 
