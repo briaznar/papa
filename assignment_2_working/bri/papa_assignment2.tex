@@ -148,7 +148,7 @@ You have seen how routing tables can be used to see how the packets are transfer
 \item
 	\begin{figure}[!hb]
   	\centering
-  	\includegraphics[width=0.9\textwidth]{network_diagram.png}
+  	\includegraphics[width=0.9\textwidth]{network_diagram_1.png}
    	\caption{Network diagram}
      \label{fig:network diagram}
 	\end{figure}
@@ -174,12 +174,12 @@ Let us consider you have 2 Wide Area Networks. One with a bandwidth of 10 Mbps (
 \[D_2= 30ms = 0.03s\]\\
 \[B_2 = 1Mbps\]\\
 \[W = 2*B*D\]\\
-\[W = 2 * 10Mb/s * 0.02s = 0.40Mb = 400Kb\]\\
-\[WP = 400kb / 10kb = 40 packages\]\\
-\[W = 2 * 1Mb/s * 0.03s = 0.06Mb = 60Kb\]\\
-\[WP = 60kb / 10kb = \textbf{6 packages}\] \\
+\[W_1 = 2 * 10Mb/s * 0.02s = 0.40Mb = 400Kb\]\\
+\[WP_1 = 400kb / 10kb = \textbf{40 packages}\]\\
+\[W_2 = 2 * 1Mb/s * 0.03s = 0.06Mb = 60Kb\]\\
+\[WP_2 = 60kb / 10kb = \textbf{6 packages}\] \\
 
-Since the sliding window protocol is made for avoiding overflowing from one fast network to a slower one we would then take the smallest package size for them to communicate.\\
+For WAN 1 the window package size is 40 and for WAN 2 is 6\\
 
 ** being W the window size in Kb\\ WP the number of packages per window\\ B the bandwidth\\ D delay\\\\
 Since you now understand the concept of Window Size for Sliding Window Protocol and how to calculate it, consider a window size of 3 packets and you have 7 packets to send. Draw the process of \texttt{Selective Repeat Sliding Window Protocol} where in the 3rd packet from the sender is lost while transmission. Show diagrammatically how the system reacts when a packet is not received and how it recuperates from that scenario. [\texttt{5 points}] \\
@@ -231,7 +231,7 @@ Given below are the following points that your client and server must perform: [
 Provide a snapshot of the results along with the code. \\
 
 
-For the server side:
+For the server side:\\ \\
 \begin{lstlisting}
 #papa_assignment2_4_server.py
 import socket
@@ -252,8 +252,9 @@ def Main():
         return
 
     data = json.loads(data)
-    message = 'Name: {}\nAge: {}\nMatrikelnummer: {}'.format(data['name'], data['age'], data['matrikel'])
-    print(message)
+    print('Name:  {}'.format(data['name'] ))
+    print('Age: {}'.format(data['age'] ))
+    print('Matrikelnummer: {}'.format(data['matrikel'] ))
 
     conn.close()
 
@@ -262,7 +263,7 @@ if __name__ == '__main__':
     Main()
 \end{lstlisting}
 
-For the client side:
+For the client side:\\ \\
 \begin{lstlisting}
 #papa_assignment2_4_client.py
 import socket
@@ -291,7 +292,8 @@ def Main():
 if __name__ == '__main__':
     Main()
 \end{lstlisting}
-\begin{figure}[h]
+
+\begin{figure}[!ht]
   	\centering
   	\includegraphics[width=0.9\textwidth]{results_client.png}
    	\caption{Client results}
@@ -304,8 +306,7 @@ if __name__ == '__main__':
      \label{fig:server}
 \end{figure}
 
-
-We used this json because is a very clean way to send and receive data it is also safe to decode/encode.
+We used json because is a very clean way to send and receive data, it is also safe to decode/encode.
 \makefooter
 
 \end{document}
