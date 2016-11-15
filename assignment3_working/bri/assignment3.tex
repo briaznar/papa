@@ -50,7 +50,7 @@ For all the assignment questions that require you to write a code, make sure to 
 
 %Please mention your team Names here: 
 Team Name: \textbf{papa}
-Brigitte Aznar \\
+\\ Brigitte Aznar \\
 Bonasmitha Behura \\
 Ilia Tugushi
 
@@ -282,8 +282,15 @@ Please explain how the traffic flows through the network in order to resolve the
 67.4.5.2 creates an IP packet with the source address XXXXXX an destination address YYYYY inside there is the DNS request. This IP packet is send as an ethernet frame to ZZZZZ. 
 ZZZZZ receives the frame and forwards the encapsulated IP packet to ....
 
-Also you can assume the DNS requests and responses will fit inside one IP packet. You also don't have to write down the specific DNS requests and responses in hex. 
+Also you can assume the DNS requests and responses will fit inside one IP packet. You also don't have to write down the specific DNS requests and responses in hex. \\ \textbf{\\ Answer:}
+\\ \\ \textbf{Assuming that the root server ALLOWS recursive DNS Queries:} 
+\\ The IP packet will leave the client(\textbf{67.4.5.2}) trough Router 1(\textbf{67.68.3.1 eth 0}) then it's forwarded trough \textbf{88.4.32.6 eth 2} and gets to Router 3 via \textbf{88.6.32.1 eth 1} and finally gets forwarded to the root server(\textbf{25.8.2.1}) as an Ethernet frame that includes DNS query. Here it will start recursive DNS queries to check where \texttt{subdomain.webscienceexampledomain.com} is.
 
+So now root server will send a packet, just like the client did before. But this time to \texttt{webscienceexampledomain.com} (\textbf{156.3.20.2}) which is a known domain to it. The packet goes trough Routers 3 and 2, since it doesn't know the address for it's subdomains. Now 156.3.20.2 replies with the subdomain's IP address.
+
+At this point the root server sends another packet to the given IP address \textbf{26.155.36.7}, this packet is sent again via Routers 3 and 2 to the IP address of the subdomain and finally it replies with the IP of the requested address.
+
+Now the root knows the IP address, caches it and sends the requested IP Address to the client.
 
 % ------------------------------------------------------------------------------
 
