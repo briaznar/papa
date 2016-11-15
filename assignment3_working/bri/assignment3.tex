@@ -77,7 +77,38 @@ Try the experiment once from University network and once from Home network and s
    \caption{Dig IP address}
      \label{fig:dig} 
 \end{figure}
-\item SOA stands for Start of Authority 
+
+\item SOA stands for Start of Authority, contains important information about the management of the zone, in particular zone transfer. It indicates the server(s) that are the ultimate authority for answering DNS queries about that domain.
+\\ It includes
+\begin{itemize}
+
+\item The root(name) of the zone: This specifies that the zone file is for the \textbf{www.uni-koblenz-landau.de.} domain.
+
+\item Class zone: IN (stands for Internet) 
+\item SOA: indicator that this is a Start of Authority record.
+
+\item The primary master name server for this domain: \textbf{dnsvw01.uni-koblenz-landau.de.}\\ Name servers can either be master or slaves, and if dynamic DNS is configured one server needs to be a "primary master", which goes here. If you haven't configured dynamic DNS, then this is just one of your master name servers.
+
+\item Email address of the administrator for this zone: \textbf{root.dnsvw01.uni-koblenz-landau.de.} \\The "@" is replaced with a dot in the email address. If the name portion of the email address normally has a dot in it, this is replace with a "\textbackslash" in this part (your.name@domain.com becomes your\textbackslash name.domain.com).
+\\ In this case the email would be root.dnsvw01@uni-koblenz-landau.de
+
+\item Serial number for the zone file: \textbf{2016110401} \\Every time you edit a zone file, you must increment this number for the zone file to propagate correctly. Slave servers will check if the master server's serial number for a zone is larger than the one they have on their system. If it is, it requests the new zone file, if not, it continues serving the original file.
+
+\item Refresh interval for the zone: \textbf{ 14400(4 hours)}\\ This is the amount of time that the slave will wait before polling the master for zone file changes.
+
+\item Retry interval for this zone: \textbf{900(15 minutes)}\\ If the slave cannot connect to the master when the refresh period is up, it will wait this amount of time and retry to poll the master.
+\item Expiry period: \textbf{604800(1 week) 900}\\ If a slave name server has not been able to contact the master for this amount of time, it no longer returns responses as an authoritative source for this zone.
+
+\item Cache error time: \textbf{14400(4 hours)}\\This is the amount of time that the name server will cache a name error if it cannot find the requested name in this file.
+\end{itemize}
+
+\begin{figure}[!hb]
+\centering
+\includegraphics[scale=0.7]{soa.png}
+\caption{SOA Results}
+	\label{fig:soa}
+\end{figure}
+
 \end{enumerate}
 
 % ------------------------------------------------------------------------------
@@ -123,26 +154,62 @@ def Main():
         print('no data received')
         return
 
-    url        = data.split(".")
-    colon      = url[0].split(":")
-    protocol   = colon[0]
-    domain     = url[2]
-    domain     = domain.split(":")
-    domain     = domain[0]
-    subdomain  = url[1]
+    def protocol(url):
+        protocol = url.split("://")
+        return protocol
 
-    port       = url[2].split(":")
-    path       = port[1]
-    port       = port[1].split("/")
-    port       = port[0]
-    path       = path.split("80")
-    path       = path[1]
-    tail       = url[3].split("?")
-    tail       = tail[1].split("#")
-    params     = tail[0]
-    fragment   = tail[1]
-    fragment   = fragment.split("\\")
-    fragment   = fragment[0]
+    def domain(url):
+        domain = url.split(":")
+        domain_string = domain[0].strip("www.")
+        if domain_string.count(".") == 1:
+            parts  = domain_string.split('.')
+            domain = parts[0] + "." +parts[1] 
+        elif domain_string.count(".") > 1:
+            parts = domain_string.split('.')
+            total = len(parts)
+            domain = parts[total - 2] + "." + parts[total - 1]
+        return domain
+
+    def subdomain(url, domain):
+        subdomain = url.split(domain)
+        subdomain = subdomain[0].strip("www.")
+        return subdomain
+
+    def port(url):
+        port = url.split(":")
+        port = port[1]
+        port = port.split("/")
+        port = port[0]
+        return port
+
+    def path(url, port):
+        path = url.split(port)
+        path = path[1].split("?")
+        path = path[0]
+        return path 
+
+    def params(url, path):
+        params = url.split(path)
+        params = params[1]
+        params = params.split("#")
+        params = params[0]
+        return params
+
+    def fragment(url):
+        fragment = url.split("#")
+        fragment = fragment[1]
+        fragment = fragment.strip("\\r\\n")
+        return fragment
+
+    protocol  = protocol(data)
+    url       = protocol[1]
+    protocol  = protocol[0]
+    domain    = domain(url)
+    subdomain = subdomain(url, domain)
+    port      = port(url)
+    path      = path(url, port)
+    params    = params(url,path)
+    fragment  = fragment(url)
 
     print('Protocol: ', protocol)
     print('Subdomain: ', subdomain)
