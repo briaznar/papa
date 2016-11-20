@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (MiKTeX 2.9 64-bit)  (format=lualatex 2016.10.27)  20 NOV 2016 16:56
+This is LuaTeX, Version 0.95.0 (MiKTeX 2.9 64-bit)  (format=lualatex 2016.10.27)  21 NOV 2016 00:55
  restricted system commands enabled.
 **papa_assignment4.tex
 (./papa_assignment4.tex
@@ -298,7 +298,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.509 seconds)
+luaotfload | main : initialization completed in 0.465 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 ("C:/Program Files/MiKTeX 2.9/tex/latex/fontspec/fontspec-luatex.sty"
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -1662,54 +1662,85 @@ Overfull \hbox (219.75073pt too wide) in paragraph at lines 96--97
  []
 
 
-Overfull \hbox (9.7486pt too wide) in paragraph at lines 128--129
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
  []
 
 
-Overfull \hbox (93.74945pt too wide) in paragraph at lines 138--139
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
  []
 
 File: logo_west_small.png Graphic file (type png)
 <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 145.
+Package luatex.def Info: logo_west_small.png used on input line 141.
 (luatex.def)             Requested size: 51.21504pt x 10.63553pt.
  [3]
+Overfull \hbox (51.74902pt too wide) in paragraph at lines 160--161
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.74854pt too wide) in paragraph at lines 161--162
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (75.74927pt too wide) in paragraph at lines 166--167
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
 File: logo_west_small.png Graphic file (type png)
- <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 154.
+<use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 184.
 (luatex.def)             Requested size: 51.21504pt x 10.63553pt.
  [4]
-File: logo_west_small.png Graphic file (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
+ []
+
+File: logo_west_small.png Graphic file (type png)
 <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 187.
+Package luatex.def Info: logo_west_small.png used on input line 220.
 (luatex.def)             Requested size: 51.21504pt x 10.63553pt.
  [5
 
 ]
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.00018pt on input line 187.
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 11.99982pt on input line 187.
+Overfull \hbox (159.75012pt too wide) in paragraph at lines 233--235
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
 
-No complaints by nag.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
 File: logo_west_small.png Graphic file (type png)
 <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 189.
+Package luatex.def Info: logo_west_small.png used on input line 255.
 (luatex.def)             Requested size: 51.21504pt x 10.63553pt.
- [6
+ [6]
+LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 12.00018pt on input line 255.
+LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 11.99982pt on input line 255.
+
+No complaints by nag.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 257.
+File: logo_west_small.png Graphic file (type png)
+<use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 257.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 257.
  (./papa_assignment4.aux
 Language english already loaded; id is 4
 Package cleveref Info: loaded `english' language definitions on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 189.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 189.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 257.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 257.
 Package rerunfilecheck Info: File `papa_assignment4.out' has not changed.
 (rerunfilecheck)             Checksum: B5259D0BE921211651976AAFDB1AC3E5;819.
 Package logreq Info: Writing requests to 'papa_assignment4.run.xml'.
@@ -1718,16 +1749,16 @@ Package logreq Info: Writing requests to 'papa_assignment4.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42737 strings out of 495118
+ 42807 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 1307 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 98 glue, 1 kern, 49 attribute, 53 glue_spec, 49 att
-ribute_list, 1 write nodes
-   avail lists: 1:3,2:2827,3:155,4:54,5:497,6:1798,7:2324,8:298,9:1715,10:9,11:9
-5
+ 1361 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 104 glue, 1 kern, 52 attribute, 53 glue_spec, 52 at
+tribute_list, 1 write nodes
+   avail lists: 1:3,2:2303,3:148,4:55,5:534,6:1798,7:1878,8:274,9:1428,10:9,11:9
+6
  45248 multiletter control sequences out of 65536+200000
- 62 fonts using 21620591 bytes
- 78i,16n,106p,8827b,1009s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62 fonts using 21620495 bytes
+ 78i,16n,106p,8827b,1001s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman10-italic.otf><c:/p
 rogram files/miktex 2.9/fonts/opentype/public/lm/lmmonolt10-bold.otf><c:/program
  files/miktex 2.9/fonts/opentype/public/lm/lmroman8-regular.otf><c:/program file
@@ -1736,9 +1767,9 @@ x 2.9/fonts/opentype/public/lm/lmroman10-regular.otf><c:/program files/miktex 2.
 9/fonts/opentype/public/lm/lmmono10-regular.otf><c:/program files/miktex 2.9/fon
 ts/opentype/public/lm/lmroman12-regular.otf><c:/program files/miktex 2.9/fonts/o
 pentype/public/lm/lmsans10-bold.otf>
-Output written on papa_assignment4.pdf (6 pages, 178937 bytes).
+Output written on papa_assignment4.pdf (7 pages, 190595 bytes).
 
-PDF statistics: 193 PDF objects out of 1000 (max. 8388607)
- 85 named destinations out of 1000 (max. 131072)
+PDF statistics: 264 PDF objects out of 1000 (max. 8388607)
+ 151 named destinations out of 1000 (max. 131072)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
