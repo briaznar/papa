@@ -37,7 +37,15 @@ def download_files(url, path = None):
     PORT = 80
     #end of line string
     CRLF = "\r\n\r\n"
-    file_name = get_file(url.path)
+
+    if not url.path:
+        url_path = "/index.html"
+    else:
+        url_path = url.path
+
+    print(url_path)
+    file_name = get_file(url_path)
+
     if not path:
         dir = os.path.realpath('.')
     else:
@@ -46,10 +54,6 @@ def download_files(url, path = None):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((HOST, PORT))
 
-    if not url.path:
-        url_path = "\\index.html"
-    else:
-        url_path = url.path
     #get request to the server
     request = "GET " + url_path + " HTTP/1.0" + CRLF
     sock.send(request.encode())
