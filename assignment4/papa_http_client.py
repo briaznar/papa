@@ -21,6 +21,7 @@ def download_files(url):
     url = (urlparse(url))
     HOST = url.netloc
     PORT = 80
+    #end of line string
     CRLF = "\r\n\r\n"
     file_name = get_file(url.path)
     dir = os.path.realpath('.')
@@ -28,27 +29,23 @@ def download_files(url):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((HOST, PORT))
 
+    #get request to the server
     request = "GET " + url.path + " HTTP/1.0" + CRLF
     sock.send(request.encode())
 
-    if file_name.find(".html") > 0:
-        file_type = 'text'
-        sep_string = b'\r\n\r\n904f\r\n'
-    else:
-        file_type = 'image'
-        sep_string = b'\r\n\r\n'
-
     byte_data = b''
+    #while the sockets return some data:
     while True:
         data = sock.recv(1024)
         byte_data = byte_data + data
         if not data:
+            #write the dowloaded file
             with open(os.path.join(dir, file_name), 'wb') as file_to_write:
-                header, sep, body = byte_data.partition(sep_string)
+                header, sep, body = byte_data.partition(b'\r\n\r\n')
                 file_to_write.write(body)
                 file_to_write.close()
             break
-
+    #write the header of the file
     with open(os.path.join(dir, file_name + ".header"), 'wb') as file_to_write:
         print(header.decode())
         file_to_write.write(header)
@@ -56,7 +53,7 @@ def download_files(url):
     sock.close()
 def main():
 
-    url = input("Type in the URL")
+    url = input("Type in the URL: ")
     url = url.strip()
     download_files(url)
 
