@@ -1,9 +1,0 @@
-HTTP/1.1 200 OK
-Date: Mon, 21 Nov 2016 00:14:25 GMT
-Server: Apache/2.4.7 (Ubuntu)
-Last-Modified: Mon, 12 Sep 2016 11:29:03 GMT
-ETag: "7d3-53c4dcd9ae8f1"
-Accept-Ranges: bytes
-Content-Length: 2003
-Connection: close
-Content-Type: image/png
