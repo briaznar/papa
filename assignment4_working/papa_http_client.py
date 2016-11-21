@@ -21,22 +21,16 @@ def download_files(url):
     url = (urlparse(url))
     HOST = url.netloc
     PORT = 80
-    CRLF = "\r\n"
+    CRLF = "\r\n\r\n"
     file_name = get_file(url.path)
     dir = os.path.realpath('.')
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((HOST, PORT))
 
-    request = [
-        "GET {} HTTP/1.1".format(url.path),
-        "Host: {}".format(url.netloc),
-        "Connection: Close",
-        "User-Agent: My_User_Agent",
-        "",
-        "",
-    ]
-    sock.send(CRLF.join(request).encode())
+    request = "GET " + url.path + " HTTP/1.0" + CRLF
+    sock.send(request.encode())
+
     if file_name.find(".html") > 0:
         file_type = 'text'
         sep_string = b'\r\n\r\n904f\r\n'
