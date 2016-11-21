@@ -16,21 +16,42 @@ def get_file(path):
     file = format_file_name(file[index])
     return file
 
+def make_new_dir(path):
+        #Creates relative path to the pictures
+        path = path.split('/')
+        img_path = ''
+        path_len = len(path) - 1
+        i = 1
+        while i < path_len:
+            img_path += '\\' + path[i]
+            i += 1
 
-def download_files(url):
+        dir = img_path
+        os.makedirs(dir, exist_ok=True)
+        return dir
+
+
+def download_files(url, path = None):
     url = (urlparse(url))
     HOST = url.netloc
     PORT = 80
     #end of line string
     CRLF = "\r\n\r\n"
     file_name = get_file(url.path)
-    dir = os.path.realpath('.')
+    if not path:
+        dir = os.path.realpath('.')
+    else:
+        dir = make_new_dir(path)
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((HOST, PORT))
 
+    if not url.path:
+        url_path = "\\index.html"
+    else:
+        url_path = url.path
     #get request to the server
-    request = "GET " + url.path + " HTTP/1.0" + CRLF
+    request = "GET " + url_path + " HTTP/1.0" + CRLF
     sock.send(request.encode())
 
     byte_data = b''

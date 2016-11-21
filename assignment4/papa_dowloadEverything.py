@@ -30,9 +30,12 @@ def main():
     url = "http://west.uni-koblenz.de/en/studying/courses/ws1617/introduction-to-web-science"
 
     images = get_images_path(file_name, url)
+
     for img in images:
         print(img)
-        download_files(img)
+        img_path = urlparse(img)
+        img_path = img_path.path
+        download_files(img, img_path)
 
 
 if __name__ == "__main__":
