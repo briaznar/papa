@@ -22,6 +22,7 @@ def get_images_path(file_name,url):
             if i.find("http://") == -1:
                 i = host + i
             image_path.append(i)
+            file.close()
     return image_path
 
 def main():
