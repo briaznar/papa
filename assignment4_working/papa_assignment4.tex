@@ -147,12 +147,11 @@ def download_files(url, path = None):
     #end of line string
     CRLF = "\r\n\r\n"
 
-    if not url.path:
+    if not url.path or url.path == "/":
         url_path = "/index.html"
     else:
         url_path = url.path
 
-    print(url_path)
     file_name = get_file(url_path)
 
     if not path:
@@ -188,7 +187,7 @@ def download_files(url, path = None):
 def main():
 
     url = input("Type in the URL: ")
-    url = url.strip()
+    url = url.strip(' ')
     download_files(url)
 
 if __name__ == "__main__":
