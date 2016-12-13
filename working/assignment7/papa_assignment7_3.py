@@ -6,16 +6,6 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from collections import Counter
 
-def kill_thread(thread):
-    import ctypes
-    id = thread.ident
-    code = ctypes.pythonapi.PyThreadState_SetAsyncExc(ctypes.c_long(id),ctypes.py_object(SystemError))
-    if code == 0:
-        raise ValueError('invalid thread id')
-    elif code != 1:
-        ctypes.pythonapi.PyThreadState_SetAsyncExc(ctypes.c_long(id),ctypes.c_long(0))
-        raise SystemError('PyThreadState_SetAsyncExc failed')
-
 def rollDice(n):
     dice = []
     i = 1
