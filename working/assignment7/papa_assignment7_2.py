@@ -1,6 +1,7 @@
 import os
 import re
 import random
+import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from collections import Counter
@@ -56,7 +57,7 @@ def CalculateUniform():
           uniform[char] = probs_new
     return uniform
 
-def MakeGibberish(prob, n, prob_name):
+def makeGibberish(prob, n, prob_name):
     i = 0
     words = ''
     find_char = []
@@ -69,6 +70,7 @@ def MakeGibberish(prob, n, prob_name):
         try:
             next_char_val = min(find_char) #finds the closest (smaller) value of the probability model to rand
         except(Exception):
+            print('somethin went worng')
             pass
 
         for char, val in prob.items():
@@ -104,11 +106,12 @@ def rank(words, do_join):
 
     return frq
 
-def rankPlot(x, zipf_freq, uniform_freq, sew_freq):
+def rankPlot(x_zipf, x_uniform, x_sew, zipf_freq, uniform_freq, sew_freq):
 
-    plt.plot(x, zipf_freq, 'r-')
-    plt.plot(x, uniform_freq, 'b-')
-    plt.plot(x, sew_freq, 'g-')
+    plt.loglog(x_zipf, zipf_freq, 'r-')
+    plt.loglog(x_uniform, uniform_freq, 'b-')
+    plt.loglog(x_sew, sew_freq, 'g-')
+
     # adds labels to the axis
     plt.ylabel('Frequency')
     plt.xlabel('Word Rank')
@@ -119,41 +122,56 @@ def rankPlot(x, zipf_freq, uniform_freq, sew_freq):
     plt.legend(handles=[zipf_legend, unifrom_legend,sew_legend ], loc=5)
     plt.show()
 
-def createWordRank(x):
-    i = 1
-    ranking = []
-    while i <= x:
-        ranking.append(i)
-        i +=1
-    return ranking
+def getCDF(freq):
+    cumsum = np.cumsum(freq)
+    normedcumsum = [x/float(cumsum[-1]) for x in cumsum]
+    return normedcumsum
 
-def main():
+def plotCDF(x_zipf, x_uniform, x_sew, zipf_cumsum, uniform_cumsum, sew_cumsum):
+    plt.semilogx(x_zipf, zipf_cumsum, 'r-')
+    plt.semilogx(x_uniform, uniform_cumsum, 'b-')
+    plt.semilogx(x_sew, sew_cumsum, 'g-')
+
+    # adds labels to the axis
+    plt.ylabel('CDF')
+    plt.xlabel('Word Rank')
+    # generates legend
+    zipf_legend = mpatches.Patch(color='red', label='generated zipf')
+    unifrom_legend = mpatches.Patch(color='blue', label='generated uniform')
+    sew_legend = mpatches.Patch(color='green', label='original text')
+    plt.legend(handles=[zipf_legend, unifrom_legend, sew_legend], loc=5)
+    plt.show()
+
+def task(zip_file, uniform_file):
+    path_to_file = os.path.realpath('.')
     print('Counting chars in SEW please wait')
     #n = read_wiki() #89860319 number of letters and spaces
     n = 89860319
-    #zipf = CalculateZipf()
-    #uniform = CalculateUniform()
+    zipf = CalculateZipf()
+    uniform = CalculateUniform()
 
-    #print('Starting gibberish creation from zipf')
-    #make_gibberish(zipf, n, 'zipf')
-    #print('zipf.txt Created')
+    if not os.path.isfile(os.path.join(path_to_file,zip_file + '.txt')):
+        print('Starting gibberish creation from zipf')
+        makeGibberish(zipf, n, zip_file)
+        print(zip_file + '.txt Created')
 
-    #print('Starting gibberish creation from uniform probabilities')
-    #make_gibberish(uniform, n, 'uniform')
-    #print('uniform.txt Created')
+    if not os.path.isfile(uniform_file + '.txt'):
+        print('Starting gibberish creation from uniform probabilities')
+        makeGibberish(uniform, n, uniform_file)
+        print(uniform_file + '.txt Created')
 
     print('Starting Word count for zipf distribution')
-    zipf_words, zipf_count = countWords('zipf.txt')
+    zipf_words, zipf_count = countWords(zip_file + '.txt')
     print(zipf_count)
 
     print('Starting Word count for uniform distribution')
-    uniform_words, uniform_count = countWords('uniform.txt')
+    uniform_words, uniform_count = countWords(uniform_file + '.txt')
     print(uniform_count)
 
     print('Starting Word count for SEW')
     sew_words, sew_count = countWords('simple_english_wikipedia.txt')
     print(sew_count)
-
+    
     print('Calculating rank of zip')
     zipf_frq = rank(zipf_words, False)
 
@@ -162,16 +180,51 @@ def main():
 
     print('Calculating rank of sew')
     sew_frq = rank(sew_words, True)
-
-    #Get top x words for each distribution
-    x = 1000
-    zipf_frq_plt = zipf_frq[:x]
-    uniform_frq_plt = uniform_frq[:x]
-    sew_frq_plt = sew_frq[:x]
-    x = createWordRank(x)
+    x_zipf = [i for i in range(0, len(zipf_frq))]
+    x_uniform = [i for i in range(0, len(uniform_frq))]
+    x_sew = [i for i in range(0, len(sew_frq))]
 
     print('Generating plot')
-    rankPlot(x, zipf_frq_plt, uniform_frq_plt, sew_frq_plt)
+    rankPlot(x_zipf, x_uniform, x_sew, zipf_frq, uniform_frq, sew_frq)
+    print('Calculating CDF for Zipf')
+    zipf_cdf_cumsum = getCDF(zipf_frq)
+
+    print('Calculating CDF for uniform')
+    uniform_cdf_cumsum = getCDF(uniform_frq)
+
+    print('Calculating CDF for SEW')
+    sew_cdf_cumsum = getCDF(sew_frq)
+
+    x_zipf = [i for i in range(0, len(zipf_cdf_cumsum))]
+    x_uniform = [i for i in range(0, len(uniform_cdf_cumsum))]
+    x_sew = [i for i in range(0, len(sew_cdf_cumsum))]
+    
+    print('Generating CDF plot')
+    plotCDF(x_zipf, x_uniform, x_sew, zipf_cdf_cumsum, uniform_cdf_cumsum, sew_cdf_cumsum)
+    
+    #Kolmogorv Smirnov test 
+    smirnov_zipf_max=[]
+    zipf_cdf_cumsum = zipf_cdf_cumsum [0:len(sew_cdf_cumsum)]
+    smirnov_zipf = [sew_cdf_cumsum_i - zipf_cdf_cumsum_i for sew_cdf_cumsum_i, zipf_cdf_cumsum_i in zip(sew_cdf_cumsum, zipf_cdf_cumsum)]
+    smirnov_zipf_max.append(max(smirnov_zipf))
+    print(smirnov_zipf_max)
+
+    #Kolmogorv Smirnov test 
+    smirnov_uniform_max= []
+    uniform_cdf_cumsum = uniform_cdf_cumsum [0:len(sew_cdf_cumsum)]
+    uniform_zipf = [sew_cdf_cumsum_i - uniform_cdf_cumsum_i for sew_cdf_cumsum_i, uniform_cdf_cumsum_i in zip(sew_cdf_cumsum, uniform_cdf_cumsum)]
+    smirnov_uniform_max.append(max(uniform_zipf))
+    print(smirnov_uniform_max)
+    
+
+def main():
+   task("zipf", 'uniform',)
+   task('zipf_2', 'uniform_2')
+   task('zipf_3', 'uniform_3')
 
 if __name__ == "__main__":
-        main()
+    main()
+
+
+
+
