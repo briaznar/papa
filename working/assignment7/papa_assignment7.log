@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (MiKTeX 2.9 64-bit)  (format=lualatex 2016.10.27)  12 DEC 2016 18:04
+This is LuaTeX, Version 0.95.0 (MiKTeX 2.9 64-bit)  (format=lualatex 2016.10.27)  13 DEC 2016 23:45
  restricted system commands enabled.
 **papa_assignment7.tex
 (./papa_assignment7.tex
@@ -298,7 +298,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.413 seconds)
+luaotfload | main : initialization completed in 0.438 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 ("C:/Program Files/MiKTeX 2.9/tex/latex/fontspec/fontspec-luatex.sty"
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -1257,7 +1257,10 @@ stead.
 
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 127.
-) ("C:/Program Files/MiKTeX 2.9/tex/latex/polyglossia/gloss-english.ldf"
+) ("C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:/Program Files/MiKTeX 2.9/tex/latex/polyglossia/gloss-english.ldf"
 File: gloss-english.ldf polyglossia: module for english
 
 Language english was not yet loaded; created with id 4
@@ -1289,49 +1292,97 @@ File: english.lbx 2016/09/17 v3.6 biblatex localization (PK/JW/AB)
 
 Package biblatex Warning: Conflicting options.
 (biblatex)                'uniquelist=minyear' requires 'labeldateparts'.
-(biblatex)                Setting 'uniquelist=true' on input line 43.
+(biblatex)                Setting 'uniquelist=true' on input line 67.
 
 (./papa_assignment7.aux
-Language english already loaded; id is 4)
+Language english already loaded; id is 4
+
+LaTeX Warning: Label `fig:dig' multiply defined.
+
+
+LaTeX Warning: Label `fig:dig@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:dig' multiply defined.
+
+
+LaTeX Warning: Label `fig:dig@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:dig' multiply defined.
+
+
+LaTeX Warning: Label `fig:dig@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:dig' multiply defined.
+
+
+LaTeX Warning: Label `fig:dig@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:dig' multiply defined.
+
+
+LaTeX Warning: Label `fig:dig@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:dig' multiply defined.
+
+
+LaTeX Warning: Label `fig:dig@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:dig' multiply defined.
+
+
+LaTeX Warning: Label `fig:dig@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:dig' multiply defined.
+
+
+LaTeX Warning: Label `fig:dig@cref' multiply defined.
+
+)
 \openout1 = papa_assignment7.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 43.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 43.
-
-("C:/Program Files/MiKTeX 2.9/tex/latex/tipa/t3cmr.fd"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 67.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 67.
+ ("C:/Program Files/MiKTeX 2.9/tex/latex/tipa/t3cmr.fd"
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
 Package nag Info: Command \frontmatter not defined, skipping amendment on input 
-line 43.
+line 67.
 Package nag Info: Command \mainmatter not defined, skipping amendment on input l
-ine 43.
+ine 67.
 Package nag Info: Command \backmatter not defined, skipping amendment on input l
-ine 43.
+ine 67.
 Package nag Info: Command \RaggedLeft not defined, skipping amendment on input l
-ine 43.
+ine 67.
 Package nag Info: Command \RaggedRight not defined, skipping amendment on input 
-line 43.
+line 67.
 
 ("C:/Program Files/MiKTeX 2.9/tex/context/base/supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1360,7 +1411,7 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \c@lstlisting=\count374
-LaTeX Info: Redefining \microtypecontext on input line 43.
+LaTeX Info: Redefining \microtypecontext on input line 67.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1407,15 +1458,15 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `normal' on input line 43.
+(Font)              `operators' in the math version `normal' on input line 67.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> EU2/latinmodern-math.otf(0)/m/n on input
- line 43.
+ line 67.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `bold' on input line 43.
+(Font)              `operators' in the math version `bold' on input line 67.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> EU2/latinmodern-math.otf(0)/bx/n on inp
-ut line 43.
+ut line 67.
 luaotfload | aux : font no 23 (<unknown>) does not define feature smcp for scrip
 t math with language dflt
 luaotfload | aux : no font with id 23
@@ -1471,15 +1522,15 @@ Scale=1.00001,FontAdjustment={\fontdimen
 . =179404.75sp\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 43.
+(Font)              `symbols' in the math version `normal' on input line 67.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> EU2/latinmodern-math.otf(1)/m/n on inpu
-t line 43.
+t line 67.
 LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 43.
+(Font)              `symbols' in the math version `bold' on input line 67.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> EU2/latinmodern-math.otf(1)/bx/n on inp
-ut line 43.
+ut line 67.
 luaotfload | aux : font no 23 (<unknown>) does not define feature smcp for scrip
 t math with language dflt
 luaotfload | aux : no font with id 23
@@ -1519,16 +1570,16 @@ Scale=0.99999,FontAdjustment={\fontdimen
 . \fontdimen 12\font =430571.4sp\relax \fontdimen 13\font =0pt\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 43
+(Font)              `largesymbols' in the math version `normal' on input line 67
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> EU2/latinmodern-math.otf(2)/m/n on inpu
-t line 43.
+t line 67.
 LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 43.
+(Font)              `largesymbols' in the math version `bold' on input line 67.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> EU2/latinmodern-math.otf(2)/bx/n on inp
-ut line 43.
+ut line 67.
 
 *************************************************
 * unicode-math warning: "mathtools-overbracket"
@@ -1542,7 +1593,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box52
-Package hyperref Info: Link coloring ON on input line 43.
+Package hyperref Info: Link coloring ON on input line 67.
 ("C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1551,9 +1602,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count376
 )
-LaTeX Info: Redefining \ref on input line 43.
-LaTeX Info: Redefining \pageref on input line 43.
-LaTeX Info: Redefining \nameref on input line 43.
+LaTeX Info: Redefining \ref on input line 67.
+LaTeX Info: Redefining \pageref on input line 67.
+LaTeX Info: Redefining \nameref on input line 67.
 
 (./papa_assignment7.out) (./papa_assignment7.out)
 \@outlinefile=\write5
@@ -1569,15 +1620,15 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'papa_assignment7.bbl' not found.
 
 No file papa_assignment7.bbl.
-Package biblatex Info: Reference section=0 on input line 43.
-Package biblatex Info: Reference segment=0 on input line 43.
+Package biblatex Info: Reference section=0 on input line 67.
+Package biblatex Info: Reference segment=0 on input line 67.
 Package polyglossia Info: Option: english variant=american.
 Language english already loaded; id is 4
-Package cleveref Info: loaded `english' language definitions on input line 43.
+Package cleveref Info: loaded `english' language definitions on input line 67.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input l
-ine 43.
+ine 67.
 Package nag Info: Command \topcaption not defined, skipping amendment on input l
-ine 43.
+ine 67.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: EU2).
 (microtype)             For optimal results, create family-specific settings.
@@ -1586,18 +1637,18 @@ Package microtype Info: Loading generic settings for font family
 lmsans10-bold.luc)(load luc: C:/Users/Bri/AppData/Local/MiKTeX/2.9/luatex-cache/
 generic/fonts/otl/lmroman12-regular.luc)
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 14.4002pt on input line 46.
+(Font)              scaled to size 14.4002pt on input line 70.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.00015pt on input line 46.
+(Font)              scaled to size 10.00015pt on input line 70.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 46.
+(Font)              scaled to size 7.0001pt on input line 70.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.39977pt on input line 46.
+(Font)              scaled to size 14.39977pt on input line 70.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.99985pt on input line 46.
+(Font)              scaled to size 9.99985pt on input line 70.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 46.
-LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 46.
+(Font)              scaled to size 6.9999pt on input line 70.
+LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 70.
  ("C:/Program Files/MiKTeX 2.9/tex/latex/euenc/eu2lmtt.fd"
 File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )(load luc: C:/Users/Bri/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl
@@ -1607,24 +1658,24 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.95015pt on input line 46.
+(Font)              scaled to size 10.95015pt on input line 70.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.00012pt on input line 46.
+(Font)              scaled to size 8.00012pt on input line 70.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.00009pt on input line 46.
+(Font)              scaled to size 6.00009pt on input line 70.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.94983pt on input line 46.
+(Font)              scaled to size 10.94983pt on input line 70.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.99988pt on input line 46.
+(Font)              scaled to size 7.99988pt on input line 70.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.99991pt on input line 46.
+(Font)              scaled to size 5.99991pt on input line 70.
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
@@ -1632,20 +1683,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 69--72
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
 <logo_west_small.png, id=66, 763.434pt x 158.556pt>
 File: logo_west_small.png Graphic file (type png)
  <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 113.
+Package luatex.def Info: logo_west_small.png used on input line 137.
 (luatex.def)             Requested size: 51.21504pt x 10.63553pt.
 (load luc: C:/Users/Bri/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/
 lmroman8-regular.luc) [2
 
 <./logo_west_small.png>]
-Overfull \hbox (114.6774pt too wide) in paragraph at lines 115--127
+Overfull \hbox (114.6774pt too wide) in paragraph at lines 139--151
 []$ \EU2/lmr/m/n/10.95 = 1 x $\EU2/latinmodern-math.otf(0)/m/n/10.95 (1, 0, 0, 
 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)[]$ \EU2/lmr/m/n/10.95 + 1 x $\E
 U2/latinmodern-math.otf(0)/m/n/10.95 (0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -1653,7 +1704,7 @@ U2/latinmodern-math.otf(0)/m/n/10.95 (0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
  []
 
 
-Overfull \hbox (96.82117pt too wide) in paragraph at lines 115--127
+Overfull \hbox (96.82117pt too wide) in paragraph at lines 139--151
 \EU2/lmr/m/n/10.95 + 1 x $\EU2/latinmodern-math.otf(0)/m/n/10.95 (0, 0, 1, 0, 0
 , 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)[]$ \EU2/lmr/m/n/10.95 + 1 x$\EU2/la
 tinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
@@ -1661,7 +1712,7 @@ tinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
  []
 
 
-Overfull \hbox (99.25206pt too wide) in paragraph at lines 115--127
+Overfull \hbox (99.25206pt too wide) in paragraph at lines 139--151
 \EU2/lmr/m/n/10.95 + 1 x $\EU2/latinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 1
 , 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)[]$ \EU2/lmr/m/n/10.95 + 1 x $\EU2/l
 atinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
@@ -1669,12 +1720,12 @@ atinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--127
+Underfull \hbox (badness 10000) in paragraph at lines 139--151
 
  []
 
 
-Overfull \hbox (114.6774pt too wide) in paragraph at lines 115--127
+Overfull \hbox (114.6774pt too wide) in paragraph at lines 139--151
 []$ \EU2/lmr/m/n/10.95 = 1 x $\EU2/latinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 
 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)[]$ \EU2/lmr/m/n/10.95 + 1 x $\E
 U2/latinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
@@ -1682,7 +1733,7 @@ U2/latinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
  []
 
 
-Overfull \hbox (96.82117pt too wide) in paragraph at lines 115--127
+Overfull \hbox (96.82117pt too wide) in paragraph at lines 139--151
 \EU2/lmr/m/n/10.95 + 1 x $\EU2/latinmodern-math.otf(0)/m/n/10.95 (0, 1, 0, 0, 0
 , 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)[]$ \EU2/lmr/m/n/10.95 + 1 x$\EU2/la
 tinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
@@ -1690,7 +1741,7 @@ tinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
  []
 
 
-Overfull \hbox (99.25206pt too wide) in paragraph at lines 115--127
+Overfull \hbox (99.25206pt too wide) in paragraph at lines 139--151
 \EU2/lmr/m/n/10.95 + 1 x $\EU2/latinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0
 , 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)[]$ \EU2/lmr/m/n/10.95 + 1 x $\EU2/l
 atinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 
@@ -1698,7 +1749,7 @@ atinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0,
  []
 
 
-Overfull \hbox (99.25206pt too wide) in paragraph at lines 115--127
+Overfull \hbox (99.25206pt too wide) in paragraph at lines 139--151
 \EU2/lmr/m/n/10.95 + 1 x $\EU2/latinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0
 , 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0)[]$ \EU2/lmr/m/n/10.95 + 1 x $\EU2/l
 atinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
@@ -1706,12 +1757,12 @@ atinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--127
+Underfull \hbox (badness 10000) in paragraph at lines 139--151
 
  []
 
 
-Overfull \hbox (114.6774pt too wide) in paragraph at lines 115--127
+Overfull \hbox (114.6774pt too wide) in paragraph at lines 139--151
 []$ \EU2/lmr/m/n/10.95 = 1 x $\EU2/latinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 
 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0)[]$ \EU2/lmr/m/n/10.95 + 1 x $\E
 U2/latinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
@@ -1719,7 +1770,7 @@ U2/latinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
  []
 
 
-Overfull \hbox (99.25206pt too wide) in paragraph at lines 115--127
+Overfull \hbox (99.25206pt too wide) in paragraph at lines 139--151
 \EU2/lmr/m/n/10.95 + 1 x $\EU2/latinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0
 , 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0)[]$ \EU2/lmr/m/n/10.95 + 1 x $\EU2/l
 atinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
@@ -1727,7 +1778,7 @@ atinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
  []
 
 
-Overfull \hbox (99.25206pt too wide) in paragraph at lines 115--127
+Overfull \hbox (99.25206pt too wide) in paragraph at lines 139--151
 \EU2/lmr/m/n/10.95 + 1 x $\EU2/latinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0
 , 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)[]$ \EU2/lmr/m/n/10.95 + 1 x $\EU2/l
 atinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
@@ -1737,89 +1788,246 @@ atinmodern-math.otf(0)/m/n/10.95 (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 <exercise1.png, id=82, 864.22874pt x 1241.8395pt>
 File: exercise1.png Graphic file (type png)
  <use exercise1.png>
-Package luatex.def Info: exercise1.png used on input line 131.
+Package luatex.def Info: exercise1.png used on input line 155.
 (luatex.def)             Requested size: 432.11331pt x 620.91823pt.
 
-Overfull \hbox (13.85776pt too wide) in paragraph at lines 131--132
+Overfull \hbox (13.85776pt too wide) in paragraph at lines 155--156
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 48.71796pt on input line 134.
+LaTeX Warning: Float too large for page by 48.71796pt on input line 158.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: logo_west_small.png Graphic file (type png)
 <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 136.
+Package luatex.def Info: logo_west_small.png used on input line 160.
 (luatex.def)             Requested size: 51.21504pt x 10.63553pt.
  [3]
 File: logo_west_small.png Graphic file (type png)
  <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 148.
+Package luatex.def Info: logo_west_small.png used on input line 172.
 (luatex.def)             Requested size: 51.21504pt x 10.63553pt.
  [4]
 File: logo_west_small.png Graphic file (type png)
 
 <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 148.
+Package luatex.def Info: logo_west_small.png used on input line 172.
 (luatex.def)             Requested size: 51.21504pt x 10.63553pt.
  [5<./exercise1.png>]
-File: logo_west_small.png Graphic file (type png)
- <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 178.
-(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
-[6
+ []
 
-]
-File: logo_west_small.png Graphic file (type png)
- <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 212.
-(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
- [7
 
-]
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.00018pt on input line 212.
-LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 11.99982pt on input line 212.
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
-No complaints by nag.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
+ []
+
 File: logo_west_small.png Graphic file (type png)
 <use logo_west_small.png>
-Package luatex.def Info: logo_west_small.png used on input line 214.
+Package luatex.def Info: logo_west_small.png used on input line 197.
 (luatex.def)             Requested size: 51.21504pt x 10.63553pt.
- [8
+ [6
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+
+ []
+
+File: logo_west_small.png Graphic file (type png)
+<use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 233.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [7]
+File: logo_west_small.png Graphic file (type png)
+ <use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 274.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [8]
+File: logo_west_small.png Graphic file (type png)
+
+<use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 321.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [9]
+File: logo_west_small.png Graphic file (type png)
+ <use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 369.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [10]
+File: logo_west_small.png Graphic file (type png)
+
+<use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 415.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [11]
+<word_rank_freq_1.png, id=338, 578.16pt x 430.0065pt>
+File: word_rank_freq_1.png Graphic file (type png)
+
+<use word_rank_freq_1.png>
+Package luatex.def Info: word_rank_freq_1.png used on input line 437.
+(luatex.def)             Requested size: 289.07928pt x 215.00272pt.
+ <cdf_1.png, id=339, 578.16pt x 430.0065pt>
+File: cdf_1.png Graphic file (type png)
+
+<use cdf_1.png>
+Package luatex.def Info: cdf_1.png used on input line 444.
+(luatex.def)             Requested size: 289.07928pt x 215.00272pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<word_rank_freq_2.png, id=340, 578.16pt x 430.0065pt>
+File: word_rank_freq_2.png Graphic file (type png)
+
+<use word_rank_freq_2.png>
+Package luatex.def Info: word_rank_freq_2.png used on input line 452.
+(luatex.def)             Requested size: 289.07928pt x 215.00272pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<cdf_2.png, id=341, 578.16pt x 430.0065pt>
+File: cdf_2.png Graphic file (type png)
+ <use cdf_2.png>
+Package luatex.def Info: cdf_2.png used on input line 459.
+(luatex.def)             Requested size: 289.07928pt x 215.00272pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<word_rank_freq_3.png, id=342, 578.16pt x 430.0065pt>
+File: word_rank_freq_3.png Graphic file (type png)
+
+<use word_rank_freq_3.png>
+Package luatex.def Info: word_rank_freq_3.png used on input line 467.
+(luatex.def)             Requested size: 289.07928pt x 215.00272pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<cdf_3.png, id=343, 578.16pt x 430.0065pt>
+File: cdf_3.png Graphic file (type png)
+ <use cdf_3.png>
+Package luatex.def Info: cdf_3.png used on input line 474.
+(luatex.def)             Requested size: 289.07928pt x 215.00272pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: logo_west_small.png Graphic file (type png)
+<use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 485.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [12<./word_rank_freq_1.png>]
+File: logo_west_small.png Graphic file (type png)
+
+<use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 485.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [13<./cdf_1.png><./word_rank_freq_2.png>]
+File: logo_west_small.png Graphic file (type png)
+
+<use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 485.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [14<./cdf_2.png><./word_rank_freq_3.png>]
+File: logo_west_small.png Graphic file (type png)
+
+<use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 485.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [15<./cdf_3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
+
+ []
+
+File: logo_west_small.png Graphic file (type png)
+<use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 523.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [16
+
+]
+File: logo_west_small.png Graphic file (type png)
+ <use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 571.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [17]
+<histogram_100.png, id=463, 578.16pt x 430.0065pt>
+File: histogram_100.png Graphic file (type png)
+ <use histogram_100.png>
+Package luatex.def Info: histogram_100.png used on input line 617.
+(luatex.def)             Requested size: 289.07928pt x 215.00272pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<dice_med_prob.png, id=464, 578.16pt x 430.0065pt>
+File: dice_med_prob.png Graphic file (type png)
+ <use dice_med_prob.png>
+Package luatex.def Info: dice_med_prob.png used on input line 624.
+(luatex.def)             Requested size: 289.07928pt x 215.00272pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: logo_west_small.png Graphic file (type png)
+<use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 637.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [18]
+File: logo_west_small.png Graphic file (type png)
+ <use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 637.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [19<./histogram_100.png><./dice_med_prob.png>]
+LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 12.00018pt on input line 637.
+LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 11.99982pt on input line 637.
+
+No complaints by nag.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 639.
+File: logo_west_small.png Graphic file (type png)
+<use logo_west_small.png>
+Package luatex.def Info: logo_west_small.png used on input line 639.
+(luatex.def)             Requested size: 51.21504pt x 10.63553pt.
+ [20
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 639.
  (./papa_assignment7.aux
 Language english already loaded; id is 4
 Package cleveref Info: loaded `english' language definitions on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 214.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 214.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 639.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 639.
 Package rerunfilecheck Info: File `papa_assignment7.out' has not changed.
 (rerunfilecheck)             Checksum: FBD59DE5A8A14E175124DACD6B492987;3292.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'papa_assignment7.run.xml'.
 
 \openout1 = papa_assignment7.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 42718 strings out of 495118
- 100000,1648299 words of node,token memory allocated
- 7815 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 982 glue, 1 kern, 129 attribute, 53 glue_spec, 129 
+ 43527 strings out of 495118
+ 125007,1648299 words of node,token memory allocated
+ 7968 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 997 glue, 1 kern, 141 attribute, 53 glue_spec, 141 
 attribute_list, 1 write nodes
-   avail lists: 1:3,2:494,3:111,4:54,5:151,6:2536,7:1497,8:145,9:212,10:10,11:13
-0
- 45256 multiletter control sequences out of 65536+200000
- 60 fonts using 21368023 bytes
- 78i,15n,106p,8827b,747s stack positions out of 5000i,500n,10000p,200000b,50000s
+   avail lists: 1:7,2:3888,3:187,4:487,5:1830,6:2537,7:2735,8:967,9:3276,10:11,1
+1:156
+ 45628 multiletter control sequences out of 65536+200000
+ 61 fonts using 21494103 bytes
+ 78i,16n,106p,8827b,1515s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman10-italic.otf><C:/P
 rogram Files/MiKTeX 2.9//fonts/opentype/public/lm-math/latinmodern-math.otf><C:/
 Program Files/MiKTeX 2.9//fonts/opentype/public/lm-math/latinmodern-math.otf><c:
@@ -1829,9 +2037,9 @@ es/miktex 2.9/fonts/opentype/public/lm/lmroman10-regular.otf><c:/program files/m
 iktex 2.9/fonts/opentype/public/lm/lmmono10-regular.otf><c:/program files/miktex
  2.9/fonts/opentype/public/lm/lmroman12-regular.otf><c:/program files/miktex 2.9
 /fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on papa_assignment7.pdf (8 pages, 1919003 bytes).
+Output written on papa_assignment7.pdf (20 pages, 2218846 bytes).
 
-PDF statistics: 192 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 131072)
+PDF statistics: 604 PDF objects out of 1000 (max. 8388607)
+ 396 named destinations out of 1000 (max. 131072)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

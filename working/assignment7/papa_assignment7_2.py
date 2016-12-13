@@ -207,6 +207,7 @@ def task(zip_file, uniform_file):
     zipf_cdf_cumsum = zipf_cdf_cumsum [0:len(sew_cdf_cumsum)]
     smirnov_zipf = [sew_cdf_cumsum_i - zipf_cdf_cumsum_i for sew_cdf_cumsum_i, zipf_cdf_cumsum_i in zip(sew_cdf_cumsum, zipf_cdf_cumsum)]
     smirnov_zipf_max.append(max(smirnov_zipf))
+    print('Smirnov test ', zip_file )
     print(smirnov_zipf_max)
 
     #Kolmogorv Smirnov test 
@@ -214,6 +215,7 @@ def task(zip_file, uniform_file):
     uniform_cdf_cumsum = uniform_cdf_cumsum [0:len(sew_cdf_cumsum)]
     uniform_zipf = [sew_cdf_cumsum_i - uniform_cdf_cumsum_i for sew_cdf_cumsum_i, uniform_cdf_cumsum_i in zip(sew_cdf_cumsum, uniform_cdf_cumsum)]
     smirnov_uniform_max.append(max(uniform_zipf))
+    print('Smirnov test ', uniform_file )
     print(smirnov_uniform_max)
     
 
