@@ -1,18 +1,21 @@
 import os
 import re
 import random
-import timeit
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+from collections import Counter
 
-def read_wiki():
+def ReadWiki():
     path_to_file = os.path.realpath('.')
     n = 0
     with open(os.path.join(path_to_file, 'simple_english_wikipedia.txt'), encoding="utf8") as file:
         for line in file:
             for char in line:
-                if re.findall('([A-Z a-z ])', char):
+                if re.findall('([A-Z a-z ])', char):#any latin letter(cap or lower case) and spaces
                     n += 1
     return n
-def calculate_zipf():
+
+def CalculateZipf():
     zipf = {}
     probs_new = 0
     zipf_probabilities = {' ': 0.17840450037213465, '1': 0.004478392057619917,
@@ -39,7 +42,7 @@ def calculate_zipf():
         zipf[char] = probs_new
     return zipf
 
-def calculate_uniform():
+def CalculateUniform():
     uniform = {}
     probs_new = 0
     uniform_probabilities = {' ': 0.1875, 'a': 0.03125, 'c': 0.03125, 'b': 0.03125, 'e': 0.03125, 'd': 0.03125,
@@ -53,7 +56,7 @@ def calculate_uniform():
           uniform[char] = probs_new
     return uniform
 
-def make_gibberish(prob, n, prob_name):
+def MakeGibberish(prob, n, prob_name):
     i = 0
     words = ''
     find_char = []
@@ -74,26 +77,101 @@ def make_gibberish(prob, n, prob_name):
 
         find_char = [] #reinitializes the array
         words += next_char
-    save_file(words, prob_name)
+    saveFile(words, prob_name)
 
-def save_file(words, file_name):
+def saveFile(words, file_name):
     path_to_file = os.path.realpath('.')
     with open(os.path.join(path_to_file, file_name+'.txt'), 'w') as file_to_write:
         file_to_write.write(words)
         file_to_write.close()
 
+def countWords(file):
+    path_to_file = os.path.realpath('.')
+    total_words = 0
+    words = []
+    with open(os.path.join(path_to_file, file), encoding="utf8") as file:
+        for line in file:
+            total_words += len(re.findall(r'\w+', line))
+            words += re.findall(r'\w+', line)
+
+    return words, total_words
+
+def rank(words, do_join):
+    if do_join:
+        words = ' '.join(words)
+    counter = Counter(words)
+    words, frq = zip(*counter.most_common())
+
+    return frq
+
+def rankPlot(x, zipf_freq, uniform_freq, sew_freq):
+
+    plt.plot(x, zipf_freq, 'r-')
+    plt.plot(x, uniform_freq, 'b-')
+    plt.plot(x, sew_freq, 'g-')
+    # adds labels to the axis
+    plt.ylabel('Frequency')
+    plt.xlabel('Word Rank')
+    # generates legend
+    zipf_legend = mpatches.Patch(color='red', label='generated zipf')
+    unifrom_legend = mpatches.Patch(color='blue', label='generated uniform')
+    sew_legend = mpatches.Patch(color='green', label='original text')
+    plt.legend(handles=[zipf_legend, unifrom_legend,sew_legend ], loc=5)
+    plt.show()
+
+def createWordRank(x):
+    i = 1
+    ranking = []
+    while i <= x:
+        ranking.append(i)
+        i +=1
+    return ranking
+
 def main():
     print('Counting chars in SEW please wait')
     #n = read_wiki() #89860319 number of letters and spaces
     n = 89860319
-    zipf = calculate_zipf()
-    uniform = calculate_uniform()
-    print('Starting gibberish creation from zipf')
-    timeit.timeit(make_gibberish(zipf, n, 'zipf'))
-    print('zipf.txt Created')
-    print('Starting gibberish creation from uniform probabilities')
-    timeit.timeit(make_gibberish(uniform, n, 'uniform'))
-    print('uniform.txt Created')
+    #zipf = CalculateZipf()
+    #uniform = CalculateUniform()
+
+    #print('Starting gibberish creation from zipf')
+    #make_gibberish(zipf, n, 'zipf')
+    #print('zipf.txt Created')
+
+    #print('Starting gibberish creation from uniform probabilities')
+    #make_gibberish(uniform, n, 'uniform')
+    #print('uniform.txt Created')
+
+    print('Starting Word count for zipf distribution')
+    zipf_words, zipf_count = countWords('zipf.txt')
+    print(zipf_count)
+
+    print('Starting Word count for uniform distribution')
+    uniform_words, uniform_count = countWords('uniform.txt')
+    print(uniform_count)
+
+    print('Starting Word count for SEW')
+    sew_words, sew_count = countWords('simple_english_wikipedia.txt')
+    print(sew_count)
+
+    print('Calculating rank of zip')
+    zipf_frq = rank(zipf_words, False)
+
+    print('Calculating rank of uniform')
+    uniform_frq = rank(uniform_words, False)
+
+    print('Calculating rank of sew')
+    sew_frq = rank(sew_words, True)
+
+    #Get top x words for each distribution
+    x = 1000
+    zipf_frq_plt = zipf_frq[:x]
+    uniform_frq_plt = uniform_frq[:x]
+    sew_frq_plt = sew_frq[:x]
+    x = createWordRank(x)
+
+    print('Generating plot')
+    rankPlot(x, zipf_frq_plt, uniform_frq_plt, sew_frq_plt)
 
 if __name__ == "__main__":
         main()
