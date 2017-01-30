@@ -2,6 +2,7 @@ import pandas as pd
 import networkx as nx
 #Functional way, but it takes ages stopped after 6h
 def bfs(graph, start, end, visited = []):
+    new_path = list()
     print("{} --- {}".format(start, end))
     # maintain a queue of paths
     queue = []
@@ -49,17 +50,21 @@ def readStore():
     return store['df2']
 def main():
     df = readStore()
-    df = df.set_index("name")
-    graph = df.to_dict()['out_links']
-    G = nx.DiGraph(graph)
-    longest_shortest = diameter(G, df)
+    #df = df.set_index("name")
+    shortest, names = [],[]
+    graph = createDictionary(df)
+    for v in graph.keys():
+        names.append(v)
+    # graph = df.to_dict()['out_links']
+    # G = nx.DiGraph(graph)
+    # longest_shortest = diameter(G, df)
 
-    #for i in range(0, len(names)):
-     #for j in range(0, len(names)):
-        #shortest.append(bfs(graph, names[i], names[j]))
+    for i in range(0, len(names)):
+        for j in range(0, len(names)):
+            shortest.append(len(bfs(graph, names[i], names[j]))-1)
 
-    #print(shortest)
-    #longest_shortest = max(shortest)
+    print(shortest)
+    longest_shortest = max(shortest)
     print("The longest shortest path aka diameter is {}".format(longest_shortest))
 if __name__ == "__main__":
         main()
