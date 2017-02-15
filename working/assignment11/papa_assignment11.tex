@@ -1,0 +1,191 @@
+% Enable warnings about problematic code
+\RequirePackage[l2tabu, orthodox]{nag}
+
+\documentclass{WeSTassignment}
+
+% The lecture title, e.g. "Web Information Retrieval".
+\lecture{Introduction to Web Science}
+% The names of the lecturer and the instructor(s)
+\author{%
+  Prof. Dr.~Steffen~Staab\\{\normalsize\mailto{staab@uni-koblenz.de}} \and
+  Ren{\'e}~Pickhardt\\{\normalsize\mailto{rpickhardt@uni-koblenz.de}} \and
+   Korok~Sengupta\\{\normalsize\mailto{koroksengupta@uni-koblenz.de}} \and 
+   Olga~Zagovora\\{\normalsize\mailto{zagovora@uni-koblenz.de}}
+}
+% Assignment number.
+\assignmentnumber{11}
+% Institute of lecture.
+\institute{%
+  Institute of Web Science and Technologies\\%
+  Department of Computer Science\\%
+  University of Koblenz-Landau%
+}
+% Date until students should submit their solutions.
+\datesubmission{February 08, 2017, 10:00 a.m.}
+% Date on which the assignments will be discussed in the tutorial.
+\datetutorial{February 10, 2017, 12:00 p.m.}
+
+% Set langauge of text.
+\setdefaultlanguage[
+  variant = american, % Use American instead of Britsh English.
+]{english}
+
+% Specify bib file location.
+\addbibresource{bibliography.bib}
+
+% For left aligned centerd boxes
+% see http://tex.stackexchange.com/a/25591/75225
+\usepackage{varwidth}
+
+% ==============================================================================
+% Document
+
+\begin{document}
+
+\maketitle
+This assignment focuses on \textbf{Online Advertisement}. As discussed in the class, teams with exact similar answers that give an indication of copying will receive null points for those questions. If you are taking answers from some source, please cite your sources.  
+
+
+
+%Please mention your team Names here: 
+Team Name: papa
+\\Members:
+\\Brigitte Aznar
+\\Bonasmitha Behura
+\\ Ilia Tugushi
+
+\section{Online advertisement (10 points)}
+
+In the videos about online advertisement, you learned about the three different payment
+methods for online advertisement.
+\begin {enumerate}
+\item Name all three methods.
+\item Mention the advantages and disadvantages, for publisher and advertiser, of all the payment methods and explain them in your own words.
+\item Provide real world examples for the three payment methods.
+\end{enumerate}
+
+\textbf{Answers:}
+\begin{enumerate}
+\item
+\begin{itemize}
+\item CPC - Cost Per Click
+\item CPM - Cost Per Mile
+\item CPA - Cost Per Acquisition
+\end{itemize}
+\item 
+\begin{itemize}
+\item Advantages
+\begin{itemize}
+\item CPC for the publisher, they get pre-paid for a specific amount of clicks, meaning that if the quota is achieved fast, he can then quickly resell the space to another Advertiser and make more profit.
+\item CPC for the Advertiser, The potential customers go into their websites, so they have a higher chance to 'catch' them.
+\item CPM for the Publisher, relatively easy to achieve because it requires not much user interaction, just visit the publisher's site
+\item CPM for the Advertiser,follows the traditional model of advertisement, the ad will be showed to the users.
+\item CPA for the Advertiser, the ad will remain online as long as the specified amount of customers do a specific action in the Advertisers site, so this guarantees actions on his side.
+\item CPA for the publisher, they can receive a percentage of the customers action on the Advertisers site.
+\end{itemize}
+
+\item Disadvantages
+\begin{itemize}
+\item CPM for the Advertiser, It doesn't guarantee traffic to his site.
+\item CPC for the Publisher, If the ad does not generate musch traffic (doesn't reach the quota) the publisher looses the opportunity to sell this space to someone else
+\item CPA for the Publisher, High risk because is not guaranteed that a customer will perform the specified action in the Advertiser's site.
+\end{itemize}
+\end{itemize}
+
+\item
+\begin{itemize}
+\item CPA - Clicking an Ikea banner in some website, and completing a purchase.
+\item CPM - Having an Ad displayed X times in Spotify.
+\item CPC - Clicking this same Ikea banner, without any particular later action.
+\end{itemize}
+\end{enumerate}
+
+%-------------------------------------------------------------------------------
+
+\section{Payments in Online Advertisement(15 points)}
+
+Provide the complete calculation with your solutions for the following questions.
+\begin {enumerate}
+\item An online advertisement company offers you to advertise your website on a
+cost-per-click base (CPC) with a cost of 0.70€ per click. Assuming that in
+average three out of ten visitors of your website are buying a product from which you are earning
+20€, would you accept this offer? What is your average profit/loss per visitor?
+\item What would be the minimal conversion rate (CR) to guarantee your profit? 
+\item Two   online   advertisement   companies  A  and   B   are   making   you   offers   to
+advertise your website. Company A follows a cost-per-mille (CPM) model with a
+cost of 2,40€ for displaying your banner advertisement thousand times. Company B follows a cost-per-action (CPA) model charging a commission of 6\% from every profit generated on your website
+through clicks on the banner ad. Assuming a click-trough-rate (CTR) of 0.5\%, a conversion rate (CR) of 20\% and an average profit of 40€ for every transaction on your website, which offer is the best? 
+\item Assuming an online advertisement campaign for a website has obviously a high
+click-through-rate (CTR), but the earnings from the website are still very poor.
+What do you think could be the problem (please provide your answer in one or two paragraphs)?
+
+\end{enumerate}
+
+\textbf{Answers:}
+\begin{enumerate}
+\item per 10 clicks cost of campaign = 7€
+\\ 3 out of 10 visitors make earning of 20€   3*20€ = 60€
+\\ in average per visitor the profit is of 60€/10 = 6€. So in average per visitor, the cost of the campaign is almost covered and leaves earnings for 60€ - 7€ =  53€. \\
+This is a very good offer, we would take it.
+
+\item Since every time 1 customer buys something gives us a profit of 20€ and the campaing (for 10 clicks) costs 7€, already 1 goal achieved is enough so.
+1/10 = 0.1 minimum Conversion rate.
+
+\item CPM -2.40 x 1000 views
+\\ CPA 6\% from every proffit generated, CTR = 0.5\%, CR= 20\%\\
+
+$\dfrac{Clicks}{Visits}$ = 0.05 X 1000 = 50\\\\
+$\dfrac{Sales}{Clicks}$ = 0.2 X 50= 10\\
+
+Finally we multiply this by 40€ which is the avg profit and we have
+\\ 40€ X 10 = 400€ \\
+
+For Company A there is only 2.40€ investment, So the overall cost will be 400€ - 2.40€ = 397.6€ \\
+\\For Company B 400€ X 0.06 = 24€ Campaign, So overall the cost will be 400€ -24€ = 376€
+
+Making Company's A offer far better.
+
+\item In this case we would assume that the Bounce Rate is pretty high, this could be due to many reasons.
+\begin{enumerate}
+\item The website is not friendly enough
+\item The customer could not find the desired item
+\item Prices are to high
+\item Maybe bad reviews on the item
+\item obvious security issues like not having https
+\end{enumerate}
+\end{enumerate}
+
+%-------------------------------------------------------------------------------
+
+\section{Online vs. TV Advertisement (10 points)}
+
+\begin{enumerate}
+\item Which of the three payment models is most similar to advertisement on TV (\textit{explain your choice and also why you think other models are not similar})? 
+\item What do you think are the most important advantages of online advertisement
+compared   to   advertisement  on  TV  (\textit{highlight 5 advantages and explain each of them})? 
+\end{enumerate} 
+
+\textbf{Answers:}
+\begin{enumerate}
+\item The most similar is CPM, because when an ad campaign is advetised on TV it is programmed to show X times in X hours, thats what te Advertiser pays for. Unlike CPA or CPC it doesn't guarantee any action from the customer, it only guarantees that they wil see it.
+
+\item 
+\begin{enumerate}
+\item Ads on the internet can be better targeted: With Cookies and other tracking mechanisms, the Internet can assure that specific target of people receives the ad.
+\item Also with tracking technologies it is easier to know if the ad campaign is working and from which publisher.
+\item Prices for online advertisement are lower than for TV, TV time is really expensive
+\item Can be more personalized because with the use of cookies certain words/ products can appear or not.
+\item Ad campaign cycles are not long, so if they didn't work it can be easily recovered from.
+\end{enumerate}
+\end{enumerate}
+
+%-------------------------------------------------------------------------------
+
+
+
+
+
+
+\makefooter
+
+\end{document}
